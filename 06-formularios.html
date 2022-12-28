@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso Front-end - HTML</h1>
+    </header>
+    <section style="background-color: #CCF0FF;">
+        <nav>
+            <h3>Aulas</h3>
+            <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="01-introducao.html">Introdução</a></li>
+                <li><a href="02-listas-e-links.html">Listas e Links</a></li>
+                <li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+                <li><a href="04-tabelas.html">Tabelas</a></li>
+                <li><a href="05-layouts.html">Layouts</a></li>
+                <li><a href="06-formularios.html">Formulários</a></li>
+                <li><a href="07-modulo.html">Modulo 07</a></li>
+                <li><a href="08-layouts_fluidos.html">Layouts Fluidos</a></li>
+				<li><a href="09-elementos_graficos.html" target="meu_iframe">Elementos Gráficos</a></li>
+				<li><a href="10-layouts_web.html">Layouts Web</a></li>
+				<li><a href="https://ebaconline.com.br" target="_blank">EBAC</a></li>
+            </ul>
+            <h3>Redes sociais</h3>
+           <ul>
+            <li><a href="https://www.linkedin.com/in/ma%C3%ADsa-rabelo-oliveira-63a048244/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/invites/contact/?i=5ynpb0tm5mz1&utm_content=3n5mpdj" target="_blank">@maisarbo</a></li>
+           </ul>
+        </nav>
+        <article style="background-color: white;">
+            <h1>RESUMO DA AULA - FORMULÁRIOS</h1>
+            <p>Formulários tem como finalidade adquirir os dados digitado pelo usuário, associado a um nome de campo e os enviar ao servidor. No servidor os dados são tratados conforme lógica do script criado pelo programador, portanto para desenvolver um formulário é utilizado HTML, CSS e uma linguagem de programação, mas por enquanto vamos dar ênfase apenas para estrutura HTML de um formulário.    
+            </p>
+            <div class="codigo">
+              <code>
+                <pre>
+                  &lt!DOCTYPE html&gt 
+                  &lthtml lang="pt-br"&gt 
+                  &ltheade&gt 
+                  &ltmeta charset="UTF-8"&gt 
+                  &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+                  &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+                  &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+                  &lt/heade&gt 
+                  &ltbody&gt 
+                    &lth1&gttitulo de nivel 1&lt/h1&gt 
+                    &ltform&gt
+                        &ltdiv&gt
+                            &ltlabel for="name"&gtNome&lt/label&gt&ltbr&gt
+                            &ltinput type="text" id="name" name="name"&gt
+                        &lt/div&gt
+                        &ltdiv&gt
+                            &ltlabel for="email"&gtE-mail&lt/label&gt&ltbr&gt
+                            &ltinput type="email" id="email" name="email"&gt
+                        &lt/div&gt
+                        &ltdiv&gt
+                            &ltlabel for="mensagem"&gtMensagens&lt/label&gt&ltbr&gt
+                            &lttextarea name="mensagem" id="mensagem" rows="5">&lt/textarea&gt
+                        &lt/div&gt
+                        &ltdiv&gt
+                            &ltbutton&gtEnviar&lt/button&gt
+                        &lt/div&gt
+                        &ltdiv&gt
+                            &ltp&gt
+                                &ltlabelQuais linguagens você prefere? &lt/label&gt
+                                &ltinput type="radio" name="linguagens" value="html"&gtHTML
+                                &ltinput type="radio" name="linguagens" value="css"&gtCSS
+                                &ltinput type="radio" name="linguagens" value="javascript"&gtJavaScript 
+                            &lt/p&gt
+                        &lt/div&gt
+                        &ltdiv&gt
+                            &ltp&gt
+                              &ltlabel&gtQuais linguagens você sabe?&lt/label&gt
+                              &ltinput type="checkbox" name="linguagens"value="html"&gtHTML
+                              &ltinput type="checkbox" name="linguagens" value="css"&gtCSS
+                              &ltinput type="checkbox" name="linguagens" value="javascript"&gtJavaScript
+                            &lt/p&gt
+                        &lt/div&gt
+                        &ltdiv&gt
+                              &ltlabel&gtQual a sua cor favorita?&lt/label&gt
+                              &ltselect&gt
+                                  &ltoption value="Azul"&gtAzul&lt/option&gt
+                                  &ltoption value="Verde"&gtVerde&lt/option&gt
+                                  &ltoption value="Vermelho" selected&gtVermelho&lt/option&gt
+                              &lt/select&gt
+                        &lt/div&gt
+                        &lt/form&gt 
+                     &lt/body&gt
+                    </pre>
+                </code>
+            </div>
+            
+        </article>
+    </section>
+    <footer>
+        <h3>Desenvolvido por Maísa</h3>
+    </footer>    
+</body>
+</html>

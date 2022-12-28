@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Formatação de Texto</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso Front-end - HTML</h1>
+    </header>
+    <section style="background-color: #CCF0FF;">
+        <nav>
+           <h3>Aulas</h3>
+           <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="01-introducao.html">Introdução</a></li>
+            <li><a href="02-listas-e-links.html">Listas e Links</a></li>
+            <li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+            <li><a href="04-tabelas.html">Tabelas</a></li>
+            <li><a href="05-layouts.html">Layouts</a></li>
+            <li><a href="06-formularios.html">Formulários</a></li>
+            <li><a href="07-modulo.html">Modulo 07</a></li>
+            <li><a href="08-layouts_fluidos.html">Layouts Fluidos</a></li>
+			<li><a href="09-elementos_graficos.html" target="meu_iframe">Elementos Gráficos</a></li>
+			<li><a href="10-layouts_web.html">Layouts Web</a></li>
+			<li><a href="https://ebaconline.com.br" target="_blank">EBAC</a></li>
+           </ul>
+           <h3>Redes sociais</h3>
+           <ul>
+            <li><a href="https://www.linkedin.com/in/ma%C3%ADsa-rabelo-oliveira-63a048244/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/invites/contact/?i=5ynpb0tm5mz1&utm_content=3n5mpdj" target="_blank">@maisarbo</a></li>
+           </ul>
+        </nav>
+
+    <article style="background-color: white;">
+        <h1>RESUMO DA AULA - FORMATAÇÃO DE TEXTO</h1>
+        <p>Como HTML é uma linguagem de marcação, sua função é indicar para o navegador como um hipertexto deve ser exibido para o usuário, portanto existem diferentes formas, entre elas temos os títulos que descrevem a essência do texto de uma página, em HTML comumente existem seis níveis de título diferentes.</p>
+        <div class="codigo">
+                <code>
+                    <pre>
+                        &lt!DOCTYPE html&gt 
+                        &lthtml lang="pt-br"&gt 
+                        &ltheade&gt 
+                        &ltmeta charset="UTF-8"&gt 
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+                        &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+                        &lt/heade&gt 
+                        &ltbody&gt 
+                           
+                           &lth1&gt NÍVEL 1 &lt/h1&gt 
+                           &lth2&gt NÍVEL 2 &lt/h2&gt 
+                           &lth3&gt NÍVEL 3 &lt/h3&gt 
+                           &lth4&gt NÍVEL 4 &lt/h4&gt 
+                           &lth5&gt NÍVEL 5 &lt/h5&gt 
+                           &lth6&gt NÍVEL 6 &lt/h6&gt 
+                    
+                        &lt/body&gt
+                    </pre>
+                </code>
+        </div>
+        <p>A linguagem HTML tem intuito de apenas indicar como texto será exibido de forma semântica, ou seja, atribuindo significados para o texto, quando se refere ao nível do título se refere a sua posição semântica no texto não tamanho. Tudo que se refere à estilo é determinado pelo CSS.</p>
+        <p>HTML permite você atribuir significados estilizando um texto</p>
+        <h2>Exemplos de estilizações de textos que atribui um significado</h2>
+        <div class="codigo">
+        <code>
+            <pre>
+                &lt!DOCTYPE html&gt 
+                &lthtml lang="pt-br"&gt 
+                &ltheade&gt 
+                &ltmeta charset="UTF-8"&gt 
+                &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+                &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+                &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+                &lt/heade&gt 
+                &ltbody&gt 
+                   
+                   &lth1&gt NÍVEL 1 &lt/h1&gt 
+                   &ltstrong&gt Atribui importância a um texto &lt/strong&gt 
+                   
+            
+                &lt/body&gt         
+            </pre>
+        </code>
+        
+        </div>
+        <div class="codigo" style="background-color: rgb(203, 227, 239);">
+    
+        <h3>Como é exibido</h3><br>
+        
+        <strong>Atribui importância a um texto</strong>
+        
+   
+        </div>
+        <div class="codigo">
+        <code>
+        <pre>
+            &lt!DOCTYPE html&gt 
+            &lthtml lang="pt-br"&gt 
+            &ltheade&gt 
+            &ltmeta charset="UTF-8"&gt 
+            &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+            &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+            &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+            &lt/heade&gt 
+            &ltbody&gt 
+               
+               &lth1&gt NÍVEL 1 &lt/h1&gt 
+               &ltem&gt Atribui ênfase a um texto &lt/em&gt 
+               
+        
+            &lt/body&gt         
+        </pre>
+        </code>
+    
+        </div>
+        <div class="codigo" style="background-color: rgb(203, 227, 239);">
+
+          <h3>Como é exibido</h3><br>
+    
+          <em>Atribui ênfase a um texto</em>
+    
+
+        </div>
+        <div class="codigo">
+        <code>
+        <pre>
+            &lt!DOCTYPE html&gt 
+            &lthtml lang="pt-br"&gt 
+            &ltheade&gt 
+            &ltmeta charset="UTF-8"&gt 
+            &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+            &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+            &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+            &lt/heade&gt 
+            &ltbody&gt 
+               
+               &lth1&gt NÍVEL 1 &lt/h1&gt 
+               &ltsmall&gt Análogo ao significado de letras pequenas em um contrato. &lt/small&gt 
+               
+        
+            &lt/body&gt         
+        </pre>
+        </code>
+    
+        </div>
+        <div class="codigo" style="background-color: rgb(203, 227, 239);">
+
+        <h3>Como é exibido</h3><br>
+    
+        <p>Um texto normalmente é exibido assim e um small <small>Análogo ao significado de letras pequenas em um contrato.</small>
+        </p>
+
+        </div>
+        <div class="codigo">
+        <code>
+        <pre>
+            &lt!DOCTYPE html&gt 
+            &lthtml lang="pt-br"&gt 
+            &ltheade&gt 
+            &ltmeta charset="UTF-8"&gt 
+            &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+            &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+            &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+            &lt/heade&gt 
+            &ltbody&gt 
+               
+               &lth1&gt NÍVEL 1 &lt/h1&gt 
+               &ltins&gt Indica que um texto foi inserido. &lt/ins&gt 
+               
+        
+            &lt/body&gt         
+        </pre>
+        </code>
+    
+        </div>
+        <div class="codigo" style="background-color: rgb(203, 227, 239);">
+
+        <h3>Como é exibido</h3><br>
+    
+        <ins>Indica que um texto foi inserido. </ins>
+    
+
+        </div>
+
+        <div class="codigo">
+        <code>
+        <pre>
+            &lt!DOCTYPE html&gt 
+            &lthtml lang="pt-br"&gt 
+            &ltheade&gt 
+            &ltmeta charset="UTF-8"&gt 
+            &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+            &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+            &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+            &lt/heade&gt 
+            &ltbody&gt 
+               
+               &lth1&gt NÍVEL 1 &lt/h1&gt 
+               &ltsub&gtDefine o texto subscrito.&lt/sub&gt 
+               
+        
+            &lt/body&gt         
+        </pre>
+        </code>
+    
+        </div>
+        <div class="codigo" style="background-color: rgb(203, 227, 239);">
+
+         <h3>Como é exibido</h3><br>
+    
+         <p>Um texto normalmente é exibido assim e um subscrito <sub>Define o texto subscrito.</sub></p>
+    
+
+        </div>
+        <div class="codigo">
+        <code>
+        <pre>
+            &lt!DOCTYPE html&gt 
+            &lthtml lang="pt-br"&gt 
+            &ltheade&gt 
+            &ltmeta charset="UTF-8"&gt 
+            &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+            &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+            &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+            &lt/heade&gt 
+            &ltbody&gt 
+               
+               &lth1&gt NÍVEL 1 &lt/h1&gt 
+               &ltsup&gtDefine o texto sobrescrito.&lt/sup&gt 
+               
+        
+            &lt/body&gt         
+        </pre>
+        </code>
+    
+        </div>
+        <div class="codigo" style="background-color: rgb(203, 227, 239);">
+
+         <h3>Como é exibido</h3><br>
+    
+          <p>Um texto normalmente é exibido assim e um sobrescrito <sup>Define o texto sobrescrito.</sup><p>
+    
+
+        </div>
+        <div class="codigo">
+        <code>
+        <pre>
+            &lt!DOCTYPE html&gt 
+            &lthtml lang="pt-br"&gt 
+            &ltheade&gt 
+            &ltmeta charset="UTF-8"&gt 
+            &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+            &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+            &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+            &lt/heade&gt 
+            &ltbody&gt 
+               
+               &lth1&gt NÍVEL 1 &lt/h1&gt 
+               &ltmark&gtAtribui destaque a um texto&lt/mark&gt 
+               
+        
+            &lt/body&gt         
+        </pre>
+        </code>
+    
+        </div>
+        <div class="codigo" style="background-color: rgb(203, 227, 239);">
+
+        <h3>Como é exibido</h3><br>
+    
+        <mark>Atribui destaque a um texto</mark>
+    
+
+        </div>
+        <div class="codigo">
+        <code>
+        <pre>
+            &lt!DOCTYPE html&gt 
+            &lthtml lang="pt-br"&gt 
+            &ltheade&gt 
+            &ltmeta charset="UTF-8"&gt 
+            &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+            &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+            &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+            &lt/heade&gt 
+            &ltbody&gt 
+               
+               &lth1&gt NÍVEL 1 &lt/h1&gt 
+               &ltblockquote&gt"Curabitur dapibus ultrices turpis, at gravida dolor 
+               hendrerit sit amet. Quisque non fermentum diam, in ornare lacus. 
+               Sed tristique suscipit dapibus. Maecenas non mi risus. 
+               Etiam pretium velit et turpis aliquet tristique. Quisque ac leo 
+               ligula. Aliquam volutpat, dolor quis mollis volutpat, nulla quam 
+               bibendum nunc, ut elementum nulla felis eu tellus. Mauris et odio sapien. 
+               Mauris vestibulum elit ut erat volutpat gravida. 
+               Duis vulputate erat in eros molestie ultrices. In nec enim ullamcorper, 
+               volutpat quam sit amet, sollicitudin odio. Aenean imperdiet quis felis quis semper. 
+               Suspendisse dignissim mauris non enim vestibulum tincidunt. 
+               Donec mollis tempus venenatis. Nam eu odio velit."&lt/blockquote&gt 
+            &lt/body&gt         
+        </pre>
+        </code>
+    
+        </div>
+        <div class="codigo" style="background-color: rgb(203, 227, 239);">
+
+        <h3>Como é exibido</h3><br>
+    
+        <p>Exemplo de citação:</p>
+         <blockquote>"Curabitur dapibus ultrices turpis, at gravida dolor hendrerit sit amet. Quisque non fermentum diam, in ornare lacus. Sed tristique suscipit dapibus. Maecenas non mi risus. Etiam pretium velit et turpis aliquet tristique. Quisque ac leo ligula. Aliquam volutpat, dolor quis mollis volutpat, nulla quam bibendum nunc, ut elementum nulla felis eu tellus. Mauris et odio sapien. Mauris vestibulum elit ut erat volutpat gravida. Duis vulputate erat in eros molestie ultrices. In nec enim ullamcorper, volutpat quam sit amet, sollicitudin odio. Aenean imperdiet quis felis quis semper. Suspendisse dignissim mauris non enim vestibulum tincidunt. Donec mollis tempus venenatis. Nam eu odio velit."</blockquote>
+    
+
+        </div>
+        <h3>Estilização de textos somente com HTML</h3>
+         <p>Para o desenvolvimento web é necessário utilizar boas práticas de desenvolvimento, como por exemplo utilizar tags HTML somente para atribuir sentido a um texto, mas para o desenvolvimento de layouts para um servidor de e-mail 
+         não é possível utilizar o HTML somente para uso semântico pois os recursos de CSS são limitados, portanto há
+         possibilidade de usar tags em HTML somente para estilização mesmo não sendo recomendada para desenvolvimento web.
+        </p>
+        <div class="codigo">
+        <code>
+        <pre>
+            &lt!DOCTYPE html&gt 
+            &lthtml lang="pt-br"&gt 
+            &ltheade&gt 
+            &ltmeta charset="UTF-8"&gt 
+            &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+            &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+            &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+            &lt/heade&gt 
+            &ltbody&gt 
+               
+               &lth1&gt NÍVEL 1 &lt/h1&gt 
+               &ltb&gtTexto em negrito&lt/b&gt 
+               &lti&gtTexto em itálico&lt/i&gt 
+               
+        
+            &lt/body&gt         
+        </pre>
+        </code>
+    
+        </div>
+        <div class="codigo" style="background-color: rgb(203, 227, 239);">
+
+        <h3>Como é exibido</h3><br>
+    
+        <b>Texto em negrito</b><br>
+        <i>Texto em itálico</i>
+    
+
+        </div>		
+      </article>
+
+   </section>
+    <footer>
+       <h3>Desenvolvido por Maísa</h3>
+    </footer>  
+    
+
+
+</body>
+</html>

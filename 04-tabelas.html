@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML - Tabelas</title>
+	<link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+  <header>
+        <h1>Curso Front-end - HTML</h1>
+  </header>
+  <section style="background-color: #CCF0FF;">
+	<nav>
+		<h3>Aulas</h3>
+		  <ul>
+			 <li><a href="homepage.html">Home</a></li>
+			 <li><a href="01-introducao.html">Introdução</a></li>
+			 <li><a href="02-listas-e-links.html">Listas e Links</a></li>
+			 <li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+			 <li><a href="04-tabelas.html">Tabelas</a></li>
+			 <li><a href="05-layouts.html">Layouts</a></li>
+			 <li><a href="06-formularios.html">Formulários</a></li>
+			 <li><a href="07-modulo.html">Modulo 07</a></li>
+			 <li><a href="08-layouts_fluidos.html">Layouts Fluidos</a></li>
+			 <li><a href="09-elementos_graficos.html" target="meu_iframe">Elementos Gráficos</a></li>
+			 <li><a href="10-layouts_web.html">Layouts Web</a></li>
+			 <li><a href="https://ebaconline.com.br" target="_blank">EBAC</a></li>
+		  </ul>
+		  <h3>Redes sociais</h3>
+           <ul>
+            <li><a href="https://www.linkedin.com/in/ma%C3%ADsa-rabelo-oliveira-63a048244/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/invites/contact/?i=5ynpb0tm5mz1&utm_content=3n5mpdj" target="_blank">@maisarbo</a></li>
+           </ul>
+	</nav>
+	<article style="background-color: white;">
+	    <h1>RESUMO DA AULA - TABELAS</h1>
+		<p>São estruturas de organização de dados, em linhas e colunas. Inicialmente no desenvolvimento web os layouts eram feitos em tabelas utilizando recursos HTML pois os recursos eram limitados. Atualmente desenvolvimento de layouts em tabelas HTML é utilizado somente para servidor de e-mails em que interpretador CSS é limitado.</p>
+		<h2>Exemplo de tabela</h2>
+		<div class="codigo">
+		  <code>
+			 <pre>
+			   &lt!DOCTYPE html&gt 
+			   &lthtml lang="pt-br"&gt 
+			   &ltheade&gt 
+			   &ltmeta charset="UTF-8"&gt 
+			   &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+			   &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+			   &lttitle&gtTítulo&lt/title&gt
+			   &lt/heade&gt 
+			   &ltbody&gt 
+					   
+				  &lth1&gt NÍVEL 1 &lt/h1&gt 
+				  &lttable border="1" width="100%"&gt
+					&ltthead&gt
+					  &lttr&gt
+						&ltth&gtColuna 1&lt/th&gt 
+						&ltth&gtColuna 2&lt/th&gt 
+						&ltth&gtColuna 3&lt/th&gt 
+					  &lt/tr&gt 
+					&lt/thead&gt
+					&lttbody&gt	
+					  &lttr align="center"&gt
+					    &lttd&gt1A&lt/td&gt 
+					    &lttd&gt1B&lt/td&gt 
+					    &lttd&gt1C&lt/td&gt 
+				        &lt/tr&gt 
+					   &lttr align="right"&gt
+					    &lttd&gt2A&lt/td&gt 
+					    &lttd&gt2B&lt/td&gt 
+					    &lttd&gt3C&lt/td&gt 
+				       &lt/tr&gt 
+					   &lttr&gt
+					    &lttd&gt3A&lt/td&gt 
+					    &lttd colspan="2"&gt3BC&lt/td&gt 
+				       &lt/tr&gt 
+				&lt/tbody&gt
+				&lttfoot&gt
+					   &lttr&gt
+					    &lttd colspan="3"&gtRodapé da tabela&lt/td&gt 
+					   &lt/tr&gt
+				&lt/tfoot&gt
+				&lt/table&gt
+			
+				</pre>
+			</code>
+			</div>
+		<h3>Tabela como layout</h3>	
+		<div class="codigo">
+		  <code>
+			<pre>
+			  &lt!DOCTYPE html&gt 
+			  &lthtml lang="pt-br"&gt 
+			  &ltheade&gt 
+			  &ltmeta charset="UTF-8"&gt 
+			  &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+			  &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+			  &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+			  &lt/heade&gt 
+			  &ltbody&gt 
+			  &lth2&gt Tabela como layout &lt/h2&gt 
+	               &lttable width="600"&gt
+		           &lttr height="90"&gt
+			           &lttd colspan="4" bgcolor="#BBCCEE" align="center"> Cabeçalho&lt/td&gt
+		           &lt/tr&gt
+		           &lttr height="300"&gt
+			           &lttd width="20" bgcolor="#0000FF"&gt&lt/td&gt
+					   &lttd width="60%" bgcolor="#DDDDDD"&gt
+					   &lth2&gtTítulo&lt/h2&gt
+					   &ltp&gtUm exemplo de parágrafo&lt/p&gt
+					   &lt/td&gt
+			           &lttd bgcolor="#EEEEEE">Coluna 2&lt/td&gt
+			           &lttd width="20"bgcolor="#0000FF">&lt/td&gt
+		           &lt/tr&gt
+		           &lttr&gt
+					&lttd bgcolor="#FF0000" colspan="4" align="center">Rodapé&lt/td&gt
+		           &lt/tr&gt
+	               &lt/table&gt
+				&lt/body&gt         
+				</pre>
+			</code>
+			
+		</div>
+		</article>
+	</section>
+	<footer>
+        <h3>Desenvolvido por Maísa</h3>
+    </footer> 
+    
+</body>
+</html>

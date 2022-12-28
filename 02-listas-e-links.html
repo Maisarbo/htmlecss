@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML-Listas e Links</title>
+    <link rel="stylesheet" href="estilo/style.css">
+</head>
+<body>
+    <header>
+        <h1>Curso Front-end - HTML</h1>
+    </header>
+    <section style="background-color: #CCF0FF;">
+        <nav>
+           <h3>Aulas</h3>
+           <ul>
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="01-introducao.html">Introdução</a></li>
+            <li><a href="02-listas-e-links.html">Listas e Links</a></li>
+            <li><a href="03-formatacao-de-texto.html">Formatação de Texto</a></li>
+            <li><a href="04-tabelas.html">Tabelas</a></li>
+            <li><a href="05-layouts.html">Layouts</a></li>
+            <li><a href="06-formularios.html">Formulários</a></li>
+            <li><a href="07-modulo.html">Modulo 07</a></li>
+            <li><a href="08-layouts_fluidos.html">Layouts Fluidos</a></li>
+			<li><a href="09-elementos_graficos.html" target="meu_iframe">Elementos Gráficos</a></li>
+			<li><a href="10-layouts_web.html">Layouts Web</a></li>
+			<li><a href="https://ebaconline.com.br" target="_blank">EBAC</a></li>
+           </ul>
+           <h3>Redes sociais</h3>
+           <ul>
+            <li><a href="https://www.linkedin.com/in/ma%C3%ADsa-rabelo-oliveira-63a048244/" target="_blank">Linkedin</a></li>
+            <li><a href="https://www.instagram.com/invites/contact/?i=5ynpb0tm5mz1&utm_content=3n5mpdj" target="_blank">@maisarbo</a></li>
+           </ul>
+        </nav>
+        <article style="background-color: white;">
+            <h1>RESUMO DA AULA - LISTAS E LINKS</h1>
+            <h2>O que são listas?</h2>
+            <p>Listas é um recurso em HTML que permite exemplificar um texto através da criação de tópicos. Um exemplo comum de uma utilização de listas é na criação de menus de sites que são uma lista não ordenada de links para navegação.
+            </p>
+            <h2>Exemplos dos três tipos de listas</h2>
+            <h3>Listas não ordenadas</h3>
+            <p>Cujo itens das listas não têm necessidade de terem marcadores que indicam sua ordem.</p>
+            <div class="codigo">
+                <code>
+                    <pre>
+                        &lt!DOCTYPE html&gt 
+                        &lthtml lang="pt-br"&gt 
+                        &ltheade&gt 
+                        &ltmeta charset="UTF-8"&gt 
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+                        &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+                        &lt/heade&gt 
+                        &ltbody&gt 
+                           &lth2&gt Ingredientes &lt/h2&gt 
+                           &ltul&gt 
+                                &ltli&gt 1col de açucar &lt/li&gt 
+                                &ltli&gt 1col de café   &lt/li&gt
+                                &ltli&gt 1 copo de água &lt/li&gt
+                           
+                           &lt/ul&gt 
+                           
+                        &lt/body&gt
+                    </pre>
+                </code>
+            </div>
+            <h3>Listas ordenadas</h3>
+            <p>Cujo itens das listas têm necessidade de terem marcadores que indicam sua ordem.</p>
+            <div class="codigo">
+                <code>
+                    <pre>
+                        &lt!DOCTYPE html&gt 
+                        &lthtml lang="pt-br"&gt 
+                        &ltheade&gt 
+                        &ltmeta charset="UTF-8"&gt 
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+                        &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+                        &lt/heade&gt 
+                        &ltbody&gt 
+                           &lth2&gt Ordem de chegada &lt/h2&gt 
+                           &ltul&gt 
+                                &ltli&gt Paula  &lt/li&gt 
+                                &ltli&gt Vitor  &lt/li&gt
+                                &ltli&gt Paulo &lt/li&gt
+                           
+                           &lt/ul&gt 
+                           
+                        &lt/body&gt
+                    </pre>
+                </code>
+            </div>
+            <h3>Listas de definições</h3>
+            <p>Cujo itens das listas tem a necessidade de terem uma descrição mais especifica.</p>
+            <div class="codigo">
+                <code>
+                    <pre>
+                        &lt!DOCTYPE html&gt 
+                        &lthtml lang="pt-br"&gt 
+                        &ltheade&gt 
+                        &ltmeta charset="UTF-8"&gt 
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+                        &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+                        &lt/heade&gt 
+                        &ltbody&gt 
+                           &lth2&gt Capital dos países &lt/h2&gt 
+                           &ltdl&gt 
+                                &ltdt&gt Brasil &lt/dt&gt 
+                                &ltdd&gt Brasília &lt/dd&gt 
+                                &ltdt&gt França  &lt/dt&gt
+                                &ltdd&gt Paris &lt/dd&gt 
+                                &ltdt&gt Uruguai &lt/dt&gt
+                                &ltdd&gt Montevidéu &lt/dd&gt 
+                           
+                           &lt/dl&gt 
+                           
+                        &lt/body&gt
+                    </pre>
+                </code>
+            </div>
+            <p>Além destas formas de marcação de listas pode se aninhar mais de um tipo de lista em outra lista.</p>
+            
+            <h2>O que são Web Sites?</h2>
+            <p>Um WEB site é uma ou conjunto de páginas WEB, que são hipertextos, construídas utilizando linguagem de marcação HTML que são interligadas através de hiperlinks.
+            </p>
+            <h2>O que são links?</h2>
+            <p>Links podem ser utilizados de diversas formas em uma página WEB, um link basicamente tem como funcionalidade encaminhar a exibição de outro documento quando um usuário clicar nele, à parte
+            visível ao usuário para ser clicada pode ser tanto um texto ou imagem, sendo considerado um hiperlink.
+            </p>
+            <h3>Exemplo das três formas de utilização de links</h3>
+            <div class="codigo">
+                <code>
+                    <pre>
+                        &lt!DOCTYPE html&gt 
+                        &lthtml lang="pt-br"&gt 
+                        &ltheade&gt 
+                        &ltmeta charset="UTF-8"&gt 
+                        &ltmeta http-equiv="X-UA-Compatible" content="IE=edge"&gt 
+                        &ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt 
+                        &lttitle&gtTítulo exibido na barra de navegação ou na guia da página&lt/title&gt
+                        &lt/heade&gt 
+                        &ltbody&gt 
+                           &lth2&gt Link externo que interligam com outros sites. &lt/h2&gt 
+                           &lta href="https://ebaconline.com.br/"&gtEBAC &lt/a&gt 
+                           &lth2&gt Link internos que interligam com outro local da pagina. &lt/h2&gt 
+                           &lta href="#top"&gtVolta ao topo&lt/a&gt
+                           &lth2&gtLink internos que interligam com outra pagina do mesmo site. &lt/h2&gt 
+                           &lta href="#lista-nao-ordenada">Ver a lista não ordenada&lt/a&gt
+                        &lt/body&gt
+                    </pre>
+                </code>
+            </div>
+        </article>
+    </section>
+    <footer>
+        <h3>Desenvolvido por Maísa</h3>
+    </footer>  
+</body>
+</html>
